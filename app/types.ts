@@ -12,13 +12,15 @@ declare global {
 }
 
 export type RootStackParamList = {
-  Root: undefined;
-  Welcome: undefined;
+  HomeDrawer: {screen: keyof RootStackParamList};
+  SensorMap: undefined;
+  SensorData: undefined;
+  Home: undefined;
+  Profile: undefined;
+  Settings: undefined;
   SignIn: undefined;
   SignUp: undefined;
-  Home: undefined;
-  SensorMap: undefined;
-  Test: undefined;
+  verifyEmail: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
